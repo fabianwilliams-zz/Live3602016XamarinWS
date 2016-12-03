@@ -1,0 +1,20 @@
+Exercise 1: Working with Shared Projects
+
+Duration:
+20 minutes
+
+Lab Goals
+The primary goal of this exercise will be to load some JSON data in from a file and use it as a source to display information in an iOS, Android and Windows Phone application. The code to manage the loading of the file will be completely shared between the projects using a Shared Project.
+
+We will need to do the following steps
+
+Create a new Shared Project.
+Add 2 shared source files (Song.cs and SongLoader.cs) to the shared project - these have already been written for you and are in the lab resources folder.
+Add a reference to the Shared Project to each of your target projects (see the above note about Visual Studio)
+Add a Nuget reference to Newtonsoft's Json.net parser which is used by the shared project code into each target project.
+Add a data file into each of the target projects which is processed by the shared code.
+Accessing local files in iOS, Android and Windows Phone 8
+
+Modify the shared code to properly load the file based on the platform.
+Required Assets
+There are included resources in the Part 01 Resources folder which are needed to complete this exercise. These are included with the course materials, so make sure you have them available before starting.

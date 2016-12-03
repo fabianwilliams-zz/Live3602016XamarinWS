@@ -1,0 +1,22 @@
+Exercise 2: Working with Portable Class Libraries
+
+Duration
+20 minutes
+
+Lab Goals
+We will work on the same project we did in Part 1, but this time we will use a Portable Class Library to share our Json data loading between the iOS, Android and Windows Phone projects. We will be starting almost where you left off in the last exercise, without the Shared Project implementation, but the code in the three platform projects has already been filled out.
+
+We will need to do the following steps
+
+Create a new Portable Class Library Project
+Add the 2 shared source files (Song.cs and SongLoader.cs) to the Portable Class Library project - these are the same files you started with in the last exercise.
+Add a reference to the PCL to each of your target projects
+Add a Nuget reference to Newtonsoft's Json.net parser to the PCL (it is already in each of the target projects).
+Create an abstraction to open a Stream and implement it for each of our platform projects.
+Use the abstraction in the portable code. We will use Dependency Injection to provide access to the unavailable API.
+As a final optional step, we will move the data file into the PCL as a resource and then share the resource across all three projects.
+How to use Embedded Resources
+
+Note for Xamarin Studio users: On Xamarin Studio (Mac), you will only be able to load two of the three projects - Windows Phone is not a supported platform and you will get an error indicating the project cannot be loaded. It is safe to ignore this error; just work with the iOS and Android portions of the lab. If you are using Xamarin Studio on Windows, the only project you can use is the Android one.
+Required Assets
+There are included resources in the Part 02 Resources folder which are needed to complete this exercise. These are included with the course materials, so make sure you have them available before starting.
